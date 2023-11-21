@@ -26,7 +26,7 @@ export struct HotItems {
       .onClick(() => {
         {
           router.push({
-            url: '/pages/detail',
+            url: 'pages/detail',
             params:{
               newsItem:getDate(12)
             }

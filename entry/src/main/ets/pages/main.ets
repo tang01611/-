@@ -2,13 +2,13 @@ import { NewsMain } from './NewsMain'
 @Entry
 @Component
 
-struct home{
+struct main{
   build(){
     Tabs({ barPosition: BarPosition.End}){
-      TabContent() {
-        NewsMain()
-      }
-      .tabBar('首页')
+      // TabContent() {
+      //   NewsMain()
+      // }
+      // .tabBar('首页')
 
       TabContent() {
         Text('推荐的内容').fontSize(30)

@@ -1,7 +1,7 @@
 {
   "src": [
-    "pages/main",
-    "pages/detail",
+    "pages/NewsMain",
+    "pages/detail"
 
   ]
 }
