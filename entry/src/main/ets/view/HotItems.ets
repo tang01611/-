@@ -1,6 +1,7 @@
 import router from '@ohos.router'
+import { getDate } from '../model/NewsDataModel'
 @Component
-struct HotItems {
+export struct HotItems {
   build(){
     Column() {
       Row() {
@@ -25,7 +26,7 @@ struct HotItems {
       .onClick(() => {
         {
           router.push({
-            uri: '../pages/detail',
+            url: '/pages/detail',
             params:{
               newsItem:getDate(12)
             }
@@ -55,7 +56,7 @@ struct HotItems {
       }.width('100%').margin(5)
       .onClick(() => {
         {
-          router.push({ uri: 'pages/detail',
+          router.push({ url: 'pages/detail',
             params:{
               newsItem:getDate(13)
             }
@@ -88,7 +89,7 @@ struct HotItems {
       }.width('100%').margin(5)
       .onClick(() => {
         {
-          router.push({ uri: 'pages/detail',
+          router.push({ url: 'pages/detail',
             params:{
               newsItem:getDate(14)
             }
@@ -110,7 +111,7 @@ struct HotItems {
     .height("15%")
     .onClick(() => {
       {
-        router.push({ uri: 'pages/detail',
+        router.push({ url: 'pages/detail',
           params:{
             newsItem:getDate(15)
           }

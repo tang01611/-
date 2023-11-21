@@ -11,17 +11,11 @@ export struct NewsSwiper{
       Image($rawfile('bqb1.jpg')).width('90%').height("100%")
         .onClick(() => {
           {
-            router.pushUrl({
-              url: '/pages/hello',
-              // params:{
-              //   newsItem:getDate(16)
-              // }
-            },(err) => {
-              if (err) {
-                console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
-                return;
+            router.push({
+              url: 'pages/detail',
+              params:{
+                newsItem:getDate(16)
               }
-              console.info('Invoke pushUrl succeeded.');
             }
             )
           }
@@ -41,7 +35,7 @@ export struct NewsSwiper{
       Image($rawfile('bqb3.jpg')).width('90%').height("60%")
         .onClick(() => {
           {
-            router.push({ url: '../pages/detail',
+            router.push({ url: 'pages/detail',
               params:{
                 newsItem:getDate(18)
               }
